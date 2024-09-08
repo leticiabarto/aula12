@@ -1,110 +1,120 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resenhas de Livros</title>
-        <link rel="stylesheet" href="site.css">
-    </head>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenhas de Livros</title>
+    <link rel="stylesheet" href="site.css">
+</head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-                    <a class="navbar-brand" href="principal.html">
-                        <img src="img/logo1.jfif" width="15%">
-                    </a>
-                <a class="navbar-brand" href="#">Navbar w/ text</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                </div>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="principal.html">
+                    <img src="img/logo1.jfif" width="15%">
+                </a>
+            <a class="navbar-brand" href="site.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="site.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html">Seção</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Resennhas de
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="livros.html">Livros</a></li>
+                          <li><a class="dropdown-item" href="#">Filmes</a></li>
+                          <li><a class="dropdown-item" href="#">Desenhos</a></li>
+                          
+                        </ul>
+                      </li>
+                </ul>
+            
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
             </div>
-        </nav>
-       
-          
-    <div class="container">
-        <h2>Escreva sua resenha</h2>
-        <form class="review-form">
-            <textarea rows="4" placeholder="Escreva sua resenha aqui..."></textarea>
-            <div class="stars">
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">&#9733;</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">&#9733;</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">&#9733;</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">&#9733;</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">&#9733;</label>
-            </div>
-            <button type="submit">Enviar Resenha</button>
-        </form>
-        <div class="reviews">
-            <h2>Resenhas dos seus amigos</h2>
-            <div class="review">
-                <div class="container">
-                    <img src="https://m.media-amazon.com/images/S/pv-target-images/5708edd5c8fc2c5b4a2ee3c96d289e281bd07cde4d2e7d2ad69973f9c7a48984.jpg" class="img-thumbnail"
-                         width="30%">
+        </div>
+    </nav>
+   
+      
+<div class="container">
+    <h2>Escreva sua resenha</h2>
+    <form class="review-form">
+        <textarea rows="4" placeholder="Escreva sua resenha aqui..."></textarea>
+        <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+        <button type="submit">Enviar Resenha</button>
+    </form>
+    <div class="reviews">
+        <h2>Resenhas dos seus amigos</h2>
+        <div class="review">
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/5708edd5c8fc2c5b4a2ee3c96d289e281bd07cde4d2e7d2ad69973f9c7a48984.jpg" class="img-thumbnail"
+                     width="30%">
 
-                    <div class="stars">
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                    </div>
-                    <p>Melhor filme que eu ja vi na minha vida!! otima adaptação das hqs, muito engraçado e divertido</p>
+                <div class="stars">
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
                 </div>
+                <p>Melhor filme que eu ja vi na minha vida!! otima adaptação das hqs, muito engraçado e divertido</p>
             </div>
-            <div class="review">
-                <div class="container">
-                    <img src="https://m.media-amazon.com/images/S/pv-target-images/10a697b22a93e85a6a902f91c4a9dea5b5c646698b6bdaf71ef9692292ea7b2e.jpg" class="img-thumbnail" width="50%">
-                    <div class="stars">
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label>&#9733;</label>
-                        <label>&#9733;</label>
-                    </div>
-                    <p>Filme muito para assistir com a familia, meus filhos amaram e tambem muito bom para assistir e passar o tempo</p>
+        </div>
+        <div class="review">
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/10a697b22a93e85a6a902f91c4a9dea5b5c646698b6bdaf71ef9692292ea7b2e.jpg" class="img-thumbnail" width="50%">
+                <div class="stars">
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label>&#9733;</label>
+                    <label>&#9733;</label>
                 </div>
+                <p>Filme muito para assistir com a familia, meus filhos amaram e tambem muito bom para assistir e passar o tempo</p>
             </div>
-            <div class="review">
-                <div class="container">
-                    <img src="https://m.media-amazon.com/images/I/81eMrK+qVCL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-                    <div class="stars">
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label style="color: gold">&#9733;</label>
-                        <label>&#9733;</label>
-                    </div>
-                    <p>Esse primeiro livro é o meu favorito de todos os cinco, um classico antigo otimo de se ler, meu personagem favorito é o Marvin me identifico demais com ele
-                        todo depressivo :D</p>
+        </div>
+        <div class="review">
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/81eMrK+qVCL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
+                <div class="stars">
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label style="color: gold">&#9733;</label>
+                    <label>&#9733;</label>
                 </div>
+                <p>O adolescente Percy Jackson descobre que os deuses gregos e as criaturas mitológicas são reais. Ele é filho de uma divindade e logo entra para um acampamento
+                    de treinamento para semideuses. Enquanto tenta se adaptar a seus novos poderes e amigos, ele descobre que o Raio-Mestre do poderoso Zeus foi roubado e ele
+                    é o principal suspeito. Assim, ele tenta solucionar o mistério junto com seus novos colegas, Grover e Annabeth.</p>
             </div>
         </div>
     </div>
-    </body>
+</div>
+</body>
 
-    </html>
+</html>

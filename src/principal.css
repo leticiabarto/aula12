@@ -50,6 +50,7 @@
     text-align: center;
 }
 
+
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
@@ -73,6 +74,19 @@
 
 .active, .dot:hover {
     background-color: #717171;
+}
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 5%;
+}
+.card-img-top{
+    width: 388px;
+    height: 594px;
+}
+.card-title{
+    cursor: pointer;
 }
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
 
