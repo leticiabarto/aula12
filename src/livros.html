@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,87 +11,89 @@
     <link rel="stylesheet" href="livros.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="principal.html">
-                <img src="img/logo1.jfif" width="15%">
-            </a>
-            <a class="navbar-brand" href="#">Navbar w/ text</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <img src="img/logo1.jfif" width="4%">
+    <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">-->
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="principal.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="site.html">Escrever Resenha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="adicionar.html">Adcionar Obra</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resenhas de
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="livros.html">Livros</a></li>
+                        <li><a class="dropdown-item" href="filmes.html">Filmes</a></li>
+                        <li><a class="dropdown-item" href="series.html">Series</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
+        <form class="container-fluid text-end">
+            <button class="btn btn-outline-success me-2" type="button">Entrar</button>
+        </form>
+    </div>
+
+</nav>
 
 
-    <div class="container">
-            <h2>Livros disponiveis</h2>
-                    <img src="https://m.media-amazon.com/images/I/61fqKvgCgoL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail"
-                         width="30%">
-            <div class="lo"><h3>Um menino e um urso em um barco</h3>
-                <p>É a história de uma amizade que nasce nas piores condições, e uma lição sobre como aproveitar as ótimas surpresas da vida quando tudo parece estar
-                perdido. Um livro diferente de todos os outros. Uma aventura sem pressa e intenso, repleta de descobertas.</p>
-            </div>
-                    <img src="https://www.agr-tc.pt/bibliotecadigital/aetc/elivros/Mary%20Shelley/Frankenstein%20%28445%29/cover.jpg" class="img-thumbnail" width="30%" >
-            <div class="lo"><h3>Frankenstein exilado dos livros</h3>
-                <p><b>Mary Shelley</b> (1797-1851), mulher do poeta inglês Percy B.Escreveu Frankenstein para participar num concurso de histórias de terror
-                realizado na intimidade do castelo de Lord Byron.A história do dr. Victor Frankenstein e da monstruosa criatura por ele concebida tem fascinado gerações
-                desde que foi publicada há mais de cem anos. Brilhante história de horror, escrita com fervor quase alucinatório, Frankenstein representa um dos mais estranhos
-                florescimentos da imaginação romântica.</p>
-                <p>Frankenstein, de Mary Shelley, é um dos maiores clássicos de terror da literatura de todos os tempos, também imortalizado no cinema através de várias adaptações.</p>
-            </div>
-                    <img src="https://m.media-amazon.com/images/I/81eMrK+qVCL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-            <div class="lo"><h3>O guia do mochileiro das galáxias</h3>
-                <p>Arthur Dent é um homem normal, que está tendo um péssimo dia. Após saber que sua casa está prestes a ser demolida, ele descobre que Ford Prefect,
-                seu melhor amigo, é um extraterrestre. Para completar, fica sabendo que a Terra está perto de ser destruída. Sem saída, Arthur pega carona em uma nave espacial
-                que está de passagem. Ele passa então a conhecer o universo, sendo que tudo o que precisa saber sobre sua nova vida está contido em um valioso livro: o Guia do
-                Mochileiro das Galáxias.</p>
-        </div>
-        <img src="https://m.media-amazon.com/images/I/61JenSx3wKL._AC_UF894,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-        <div class="lo"><h3>O ladrão de raios</h3>
-            <p>Arthur Dent é um homem normal, que está tendo um péssimo dia. Após saber que sua casa está prestes a ser demolida, ele descobre que Ford Prefect,
+<div class="container">
+    <h2>Livros disponiveis</h2>
+    <img src="https://m.media-amazon.com/images/I/61fqKvgCgoL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail"
+         width="30%">
+    <div class="lo"><h3>Um menino e um urso em um barco</h3>
+        <p>É a história de uma amizade que nasce nas piores condições, e uma lição sobre como aproveitar as ótimas surpresas da vida quando tudo parece estar
+            perdido. Um livro diferente de todos os outros. Uma aventura sem pressa e intenso, repleta de descobertas.</p>
+    </div>
+    <hr>
+    <img src="https://www.agr-tc.pt/bibliotecadigital/aetc/elivros/Mary%20Shelley/Frankenstein%20%28445%29/cover.jpg" class="img-thumbnail" width="30%" >
+    <div class="lo"><h3>Frankenstein exilado dos livros</h3>
+        <p><b>Mary Shelley</b> (1797-1851), mulher do poeta inglês Percy B.Escreveu Frankenstein para participar num concurso de histórias de terror
+            realizado na intimidade do castelo de Lord Byron.A história do dr. Victor Frankenstein e da monstruosa criatura por ele concebida tem fascinado gerações
+            desde que foi publicada há mais de cem anos. Brilhante história de horror, escrita com fervor quase alucinatório, Frankenstein representa um dos mais estranhos
+            florescimentos da imaginação romântica.</p>
+        <p>Frankenstein, de Mary Shelley, é um dos maiores clássicos de terror da literatura de todos os tempos, também imortalizado no cinema através de várias adaptações.</p>
+    </div>
+    <hr>
+    <img src="https://m.media-amazon.com/images/I/81eMrK+qVCL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
+    <div class="lo"><h3>O guia do mochileiro das galáxias</h3>
+        <p>Arthur Dent é um homem normal, que está tendo um péssimo dia. Após saber que sua casa está prestes a ser demolida, ele descobre que Ford Prefect,
             seu melhor amigo, é um extraterrestre. Para completar, fica sabendo que a Terra está perto de ser destruída. Sem saída, Arthur pega carona em uma nave espacial
             que está de passagem. Ele passa então a conhecer o universo, sendo que tudo o que precisa saber sobre sua nova vida está contido em um valioso livro: o Guia do
             Mochileiro das Galáxias.</p>
-        </div>
-        <img src="https://m.media-amazon.com/images/I/61RvpX3hkTL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-        <div class="lo"><h3>As vantagens de ser invisível</h3>
-            <p>Um mundo de sexo, drogas e rock'n'roll, quando o que todo mundo quer é aquela música certa que provoca o impulso perfeito para se sentir infinito. A luta entre
-                apatia e entusiasmo marca o fim da adolescência de Charlie nesta história divertida e ao mesmo tempo instigante.</p>
-        </div>
-        <img src="https://m.media-amazon.com/images/I/91SDZ2eUj+L._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-        <div class="lo"><h3>Verity</h3>
-            <p>É um suspense psicológico que conta a história de uma escritora contratada para terminar uma série de livros após a misteriosa morte da autora
-                original, Verity Crawford. Ao investigar os manuscritos de Verity, ela descobre segredos perturbadores sobre a vida da autora.</p>
-        <div class="reviews">
-            <h2>reviews de Livros</h2>
-                    <img src="https://m.media-amazon.com/images/I/61fqKvgCgoL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail"
-                         width="30%">
-                    <p>Melhor filme que eu ja vi na minha vida!! otima adaptação das hqs, muito engraçado e divertido</p>
-            </div>
-                    <img src="https://www.agr-tc.pt/bibliotecadigital/aetc/elivros/Mary%20Shelley/Frankenstein%20%28445%29/cover.jpg" class="img-thumbnail" width="30%">
-                    <p>Filme muito para assistir com a familia, meus filhos amaram e tambem muito bom para assistir e passar o tempo</p>
-                    <img src="https://m.media-amazon.com/images/I/81eMrK+qVCL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
-                    <p>Esse primeiro livro é o meu favorito de todos os cinco, um classico antigo otimo de se ler, meu personagem favorito é o Marvin me identifico demais com ele
-                        todo depressivo :D</p>
-        </div>
     </div>
+    <hr>
+    <img src="https://m.media-amazon.com/images/I/61JenSx3wKL._AC_UF894,1000_QL80_.jpg" class="img-thumbnail" width="30%">
+    <div class="lo"><h3>O ladrão de raios</h3>
+        <p>Arthur Dent é um homem normal, que está tendo um péssimo dia. Após saber que sua casa está prestes a ser demolida, ele descobre que Ford Prefect,
+            seu melhor amigo, é um extraterrestre. Para completar, fica sabendo que a Terra está perto de ser destruída. Sem saída, Arthur pega carona em uma nave espacial
+            que está de passagem. Ele passa então a conhecer o universo, sendo que tudo o que precisa saber sobre sua nova vida está contido em um valioso livro: o Guia do
+            Mochileiro das Galáxias.</p>
+    </div>
+    <hr>
+    <img src="https://m.media-amazon.com/images/I/61RvpX3hkTL._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
+    <div class="lo"><h3>As vantagens de ser invisível</h3>
+        <p>Um mundo de sexo, drogas e rock'n'roll, quando o que todo mundo quer é aquela música certa que provoca o impulso perfeito para se sentir infinito. A luta entre
+            apatia e entusiasmo marca o fim da adolescência de Charlie nesta história divertida e ao mesmo tempo instigante.</p>
+    </div>
+    <hr>
+    <img src="https://m.media-amazon.com/images/I/91SDZ2eUj+L._AC_UF1000,1000_QL80_.jpg" class="img-thumbnail" width="30%">
+    <div class="lo"><h3>Verity</h3>
+        <p>É um suspense psicológico que conta a história de uma escritora contratada para terminar uma série de livros após a misteriosa morte da autora
+            original, Verity Crawford. Ao investigar os manuscritos de Verity, ela descobre segredos perturbadores sobre a vida da autora.</p>
+    </div>
+</div>
 </body>
 </html>

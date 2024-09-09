@@ -2,7 +2,6 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,64 +19,4 @@ br{
 
 h2 {
     margin-top: 0;
-}
-
-.review-form {
-    margin-bottom: 30px;
-}
-
-.review-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-}
-
-.stars {
-    display: flex;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.stars input[type="radio"] {
-    display: none;
-}
-
-.stars label {
-    font-size: 24px;
-    cursor: pointer;
-    color: #ccc;
-}
-
-.stars .stargold label{
-    color: gold;
-}
-
-
-.stars label:hover,
-.stars input[type="radio"]:checked ~ label {
-    color: gold;
-}
-
-.reviews {
-    margin-top: 30px;
-}
-
-.review {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.review:last-child {
-    border-bottom: none;
-}
-
-.review .stars {
-    margin-bottom: 5px;
-}
-
-.review p {
-    margin: 0;
 }
